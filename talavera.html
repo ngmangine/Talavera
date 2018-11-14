@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<title>Talvera</title>
+		<style>
+		    * {
+		        margin:0;
+	        	padding:0;
+        		font-weight:bold;
+		        text-align:center;
+        		vertical-align:middle;
+		        border:0;
+            }
+
+            button {
+            	display:block;
+            }
+
+            /* tile classes */
+            .one {
+            	background-color:#130869;
+            	color:#f2f4dc;
+            }
+            .two {
+            	background-color:#5b99e7;
+            }
+            .three {
+            	background-color:#f2f4dc;
+            }
+            .four {
+            	background-color:#e9a713;
+            }
+            .five {
+            	background-color:#883714;
+            	color:#f2f4dc;
+            }
+            .six {
+            	background-color:#aa7147;
+            }
+            .seven {
+            	background-color:#2f6e4e;
+            }
+            .eight {
+            	background-color:#1d1f4c;
+            	color:#f2f4dc;
+            }
+		    
+		</style>
+		<script type="text/Javascript">
+			class Actions {
+		
+				static chooseNumberOfPlayers(numberOfPlayers) {
+					alert("blah");
+					theGame = new Game(numberOfPlayers);
+					//document.getElementById("chooseNumberOfPlayers").style.display = "none";
+					//document.getElementById("chooseFirstPlayer"+theGame.numberOfPlayers).style.display = "block";
+				}
+			
+			}
+
+			class Game {
+	
+				constructor(numberOfPlayers1) {
+					this.numberOfPlayers = numberOfPlayers1;
+				}
+	
+			}
+
+			var theGame;
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<div id="chooseNumberOfPlayers">
+			<button style="width:100%;height:12.5%;" class="one">How Many Players?</button>
+			<button style="width:100%;height:12.5%;" class="two" onclick="Actions.chooseNumberOfPlayers(2);">Two</button>
+			<button style="width:100%;height:12.5%;" class="three" onclick="Actions.chooseNumberOfPlayers(3);">Three</button>
+			<button style="width:100%;height:12.5%;" class="four" onclick="Actions.chooseNumberOfPlayers(4);">Four</button>
+			<button style="width:100%;height:12.5%;" class="five" onclick="Actions.chooseNumberOfPlayers(5);">five</button>
+			<button style="width:100%;height:12.5%;" class="six" onclick="Actions.chooseNumberOfPlayers(6);">Six</button>
+			<button style="width:100%;height:12.5%;" class="seven" onclick="Actions.chooseNumberOfPlayers(7);">Seven</button>
+			<button style="width:100%;height:12.5%;" class="eight" onclick="Actions.chooseNumberOfPlayers(8);">Eight</button>
+		</div>
+		<div id="chooseFirstPlayer2" style="display:none;">
+			<button style="width:100%;height:50%;" class="one"></button>
+			<button style="width:100%;height:50%;" class="two"></button>
+		</div>
+		<div id="chooseFirstPlayer3" style="display:none;">
+			<button style="width:100%;height:33%;" class="one"></button>
+			<button style="width:100%;height:34%;" class="two"></button>
+			<button style="width:100%;height:33%;" class="three"></button>
+		</div>
+		<div id="chooseFirstPlayer4" style="display:none;">
+			<button style="width:100%;height:25%;" class="one"></button>
+			<button style="width:100%;height:25%;" class="two"></button>
+			<button style="width:100%;height:25%;" class="three"></button>
+			<button style="width:100%;height:25%;" class="four"></button>
+		</div>
+		<div id="chooseFirstPlayer5" style="display:none;">
+			<button style="width:100%;height:20%;" class="one"></button>
+			<button style="width:100%;height:20%;" class="two"></button>
+			<button style="width:100%;height:20%;" class="three"></button>
+			<button style="width:100%;height:20%;" class="four"></button>
+			<button style="width:100%;height:20%;" class="five"></button>
+		</div>
+		<div id="chooseFirstPlayer6" style="display:none;">
+			<button style="width:100%;height:16%;" class="one"></button>
+			<button style="width:100%;height:17%;" class="two"></button>
+			<button style="width:100%;height:17%;" class="three"></button>
+			<button style="width:100%;height:17%;" class="four"></button>
+			<button style="width:100%;height:17%;" class="five"></button>
+			<button style="width:100%;height:16%;" class="six"></button>
+		</div>
+		<div id="chooseFirstPlayer7" style="display:none;">
+			<button style="width:100%;height:15%;" class="one"></button>
+			<button style="width:100%;height:14%;" class="two"></button>
+			<button style="width:100%;height:14%;" class="three"></button>
+			<button style="width:100%;height:14%;" class="four"></button>
+			<button style="width:100%;height:14%;" class="five"></button>
+			<button style="width:100%;height:14%;" class="six"></button>
+			<button style="width:100%;height:15%;" class="seven"></button>
+		</div>
+		<div id="chooseFirstPlayer8" style="display:none;">
+			<button style="width:100%;height:12.5%;" class="one"></button>
+			<button style="width:100%;height:12.5%;" class="two"></button>
+			<button style="width:100%;height:12.5%;" class="three"></button>
+			<button style="width:100%;height:12.5%;" class="four"></button>
+			<button style="width:100%;height:12.5%;" class="five"></button>
+			<button style="width:100%;height:12.5%;" class="six"></button>
+			<button style="width:100%;height:12.5%;" class="seven"></button>
+			<button style="width:100%;height:12.5%;" class="eight"></button>
+		</div>
+	</body>
+</html>
